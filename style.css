@@ -1,0 +1,94 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	font: inherit;
+    font-family: "Inter", sans-serif;
+	vertical-align: baseline;
+}
+
+body{
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+li{
+    list-style-type: none;
+    text-align: center;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: .5rem 4rem;
+    border-radius: 8px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    background-color: bisque;
+    padding: 2.5rem 1rem; 
+    border-radius: 2em;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 12%);
+}
+
+.profile_info{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin: .5rem auto;
+}
+
+img{
+    border-radius: 50%;
+    width: 88px;
+}
+
+.user_info{
+    text-align: center;
+}
+.location{
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+}
+
+.bio{
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        width: 375px;
+    }
+  }
